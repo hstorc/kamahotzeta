@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Kama Hotzeta</string>
+    <string name="product_prompt">select one</string>
+    <string-array name="product_arrays">
+        <item>Fruits</item>
+        <item>Groceries</item>
+        <item>Clothing</item>
+        <item>Fast Food</item>
+        <item>Books</item>
+        <item>Bills</item>
+        <item>Rent</item>
+    </string-array>
+    <string-array name="PaymentMethods">
+        <item>Cash</item>
+        <item>Debit</item>
+        <item>Credit</item>
+        <item>Check</item>
+    </string-array>
+    <string-array name="CreditCards">
+        <item>Visa</item>
+        <item>American Express</item>
+        <item>Capital One</item>
+        <item>Discovery</item>
+    </string-array>
+</resources>

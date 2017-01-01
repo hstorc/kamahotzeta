@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.grey.hstorc.dropdownandprice.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much?"
+        android:id="@+id/lblHowmuch"/>
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/lblHowmuch"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what?"
+        android:layout_below="@id/priceEditText"
+        android:id="@+id/lblWhat"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spProducts"
+        android:spinnerMode="dialog"
+        android:prompt="@string/product_prompt"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:entries="@array/product_arrays"
+        android:layout_below="@id/lblWhat"></AutoCompleteTextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="when?"
+        android:id="@+id/whenLabel"
+        android:layout_below="@id/spProducts"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whenLabel"
+        android:text="click for date"
+        android:id="@+id/transactionDate"
+        android:onClick="onClick"
+        ></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NextActivity"
+        android:onClick="NextActivity"
+        android:text="Save"
+        android:layout_below="@id/transactionDate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowAll"
+        android:onClick="ShowAll"
+        android:text="Show all"
+        android:layout_below="@id/NextActivity"
+        />
+</RelativeLayout>
